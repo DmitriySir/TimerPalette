@@ -1,0 +1,62 @@
+.palette__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.color__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color__item {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+.color__item:hover {
+  transform: scale(1.1);
+}
+
+.color__text {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: white;
+}
+
+.delete__icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.color__item:hover .delete__icon {
+  opacity: 1;
+}
+
+.button__rainbow{
+  background: linear-gradient(to right, #ff0000, #ff8000, #ffff00, #00ff00, #00ffff, #0000ff, #8000ff);
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(8, 8, 8);
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

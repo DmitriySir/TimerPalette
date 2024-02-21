@@ -1,0 +1,24 @@
+.timer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.timer__input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.timer__countdown {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.timer__finished {
+  font-size: 24px;
+  color: green;
+  margin-top: 10px;
+}
